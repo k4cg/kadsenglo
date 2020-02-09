@@ -1,0 +1,20 @@
+{
+    "wifi": {
+        "ssid": "wifiname",
+        "pass": "wifipassord"
+    },
+    "webrepl": {
+        "pass": "webrplpassword"
+    },
+    "hardware": {
+        "pin": 12
+    },
+    "behavior": {
+        "bootOnTime": 10,
+        "onTime": 60,
+        "sleepTime": 60,
+        "weekdays": [5],
+        "hours": [20, 21, 22],
+        "chance": 60
+    }
+}
