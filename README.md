@@ -1,6 +1,6 @@
 # Kadsenglo
 
-Status: Pre alpha
+Status: Alpha
 
 A hacksapce is like a litter box: If you don't tidy it up on a regular basis, the cats don't feel well anymore. This project shoud help the residents to keep it clear.
 

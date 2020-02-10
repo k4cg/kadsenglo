@@ -10,14 +10,14 @@ config = utils.load_config()
 
 def doCleaning():
     weekday = utime.localtime()[6]
-    if weekday not in my_list:
+    if weekday not in config["behavior"]["weekdays"]:
         print("doCleaning: Not today :-(")
         return False
 
     hour = utime.localtime()[3]
     if hour not in config["behavior"]["hours"]:
         print("doCleaning: Not yet / anymore")
-        retrun False
+        return False
 
     if random.randrange(config["behavior"]["chance"]) > 0:
         print("doCleaning: Not now :-(")
@@ -38,6 +38,7 @@ while True:
     if doCleaning():
         strom.on()
         time.sleep(config["behavior"]["onTime"])
+        print("main: Thank you for cleaning")
         strom.off()
 
     time.sleep(config["behavior"]["sleepTime"])

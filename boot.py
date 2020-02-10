@@ -10,5 +10,5 @@ import utils
 
 config = utils.load_config()
 utils.wifi_setup(config["wifi"])
-utils.webrepl_setup()
+utils.webrepl_setup(config["webrepl"])
 utils.updatetime()

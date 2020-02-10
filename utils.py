@@ -23,10 +23,10 @@ def wifi_setup(config):
     print('WiFi: Network config:', wifi.ifconfig())
 
 
-def webrepl_setup():
+def webrepl_setup(config):
     import webrepl
     print("Webrepl: configure")
-    webrepl.start(password=config["webrepl"]["pass"])
+    webrepl.start(password=config["pass"])
 
 
 # https://worldtimeapi.org/timezone/
